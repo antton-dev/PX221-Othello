@@ -55,7 +55,7 @@ int adjacents(*plateau[], int i, int j) {
     return t_adjacents;
 }
 
-int verifier_legalite(int *plateau[],int i,int j,int couleur){
+/* int verifier_legalite(int *plateau[],int i,int j,int couleur){
     int couleur_oppose = (couleur+1)%2; // inverser la couleur
     int couleur_adjacente_oppose = 0; // si y'a une couleur opposé à coté mettre à 1
     int position_adjacente[8] = [0,0,0,0,0,0,0,0,0]; // savoir quel vecteur faire mais ignorer l'indice 4 
@@ -80,7 +80,7 @@ int verifier_legalite(int *plateau[],int i,int j,int couleur){
             }
                     
         }
-    }
+    } */
 
 
 
