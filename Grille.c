@@ -9,9 +9,9 @@
 #define EMPTY 2 
 #define ILLEGAL -1
 
-void intitialiser_plateau(*plateau[]) {
+void intitialiser_plateau(int *plateau[]) {
     for (int i=0; i<=7; i++) {
-        for (int j=0; j=7; j++) {
+        for (int j=0; j<=7; j++) {
             plateau[i][j] = EMPTY;
         }
     }
@@ -32,28 +32,14 @@ int statut_case(int *plateau[],int i,int j) {
             return i; // retourne ce qu'il y a dans la case
         }
     }
+    return -1;
 }
 
 void placer_pion(int *plateau[],int i,int j,int couleur){
     plateau[i][j]=couleur;
 }
 
-int adjacents(*plateau[], int i, int j) {
-    int t_adjacents[2][2];
-    int m, n;
-    m=0;
-    for(int k=i-1; k<=i+2; k++) {
-        n=0;
 
-        for(int l=j-1; l<=j+2; l++){
-            t_adjacents[m][n] = plateau[k][l];
-            n++;
-        }
-        m++;
-    }
-
-    return t_adjacents;
-}
 
 /* int verifier_legalite(int *plateau[],int i,int j,int couleur){
     int couleur_oppose = (couleur+1)%2; // inverser la couleur
@@ -80,19 +66,19 @@ int adjacents(*plateau[], int i, int j) {
             }
                     
         }
-    } */
+    } 
 
 
 
 return valide;
 }
-
+*/
 
 
 
 
 int main(){
-    int * othello[N][N];
+  //  int * othello[N][N];
 
 
 return 0;
