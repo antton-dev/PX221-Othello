@@ -9,6 +9,8 @@
 #define EMPTY 2 
 #define ILLEGAL -1
 
+// test modif
+
 void intitialiser_plateau(int *plateau[]) {
     for (int i=0; i<=7; i++) {
         for (int j=0; j<=7; j++) {
